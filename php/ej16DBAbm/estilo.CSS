@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+
+#contenedor {
+    width: 100%;
+    height: 100%;
+}
+
+div.titulo {
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: blueviolet;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.pie {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: blueviolet;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/*VENTANAS MODALES*/
+
+#ModalFormularioAlta,
+#ModalFormularioModi {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    border: solid;
+    visibility: visible;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+#ModalRespuesta {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 40%;
+    height: 50%;
+    box-sizing: border-box;
+    border: solid;
+    background-color: linen;
+    z-index: 3;
+}
+
+#contRespuesta {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    background-color: lightblue;
+}
+
+div.columna {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 0.7em;
+    padding-top: 1%;
+}
+
+div.columna2 {
+    position: relative;
+    clear: both;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+div.encabezado {
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: plum;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.cerrar {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+}
+
+
+/*VISIBILIDAD*/
+
+.contenedorON {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contenedorOFF {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.modalOFF {
+    visibility: hidden;
+}
+
+label {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 15px;
+}
+
+input {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 85%;
+    height: 60%;
+}
+
+select {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 85%;
+    height: 60%;
+}
+
+form {
+    height: 100%;
+}
+
+button {
+    position: relative;
+    float: right;
+    font-size: 1em;
+    margin-right: 1%;
+    padding: 7px;
+}
+
+input button {
+    font-size: 0.8em;
+}
+
+table {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    height: 80%;
+    border-collapse: collapse;
+    font-size: 1em;
+    overflow: auto;
+}
+
+tbody tr:nth-child(odd) {
+    background: pink;
+    height: 30px;
+    text-align: center;
+    color: blueviolet;
+    box-sizing: border-box;
+}
+
+tbody tr:nth-child(even) {
+    background: plum;
+    height: 30px;
+    background: lightskyblue;
+    color: blueviolet;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+tbody {
+    height: 100%;
+    display: block;
+    overflow-y: auto;
+}
+
+thead {
+    background-color: lightseagreen;
+    height: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+tfoot {
+    background-color: lightseagreen;
+    height: 10%;
+    color: white;
+}
+
+th {
+    font-size: 0.8em;
+    font-family: 'Trebuchet MS';
+    height: 30px;
+}
+
+tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+cursor {
+    cursor: pointer;
+}
+
+
+/*RESPONSIVIDAD*/
+
+@media screen and (max-width:600px) {
+    * {
+        font-size: 18px;
+    }
+    button {
+        font-size: 0.8em;
+    }
+    div.titulo {
+        font-size: 0.8em;
+        height: 15%;
+    }
+    div.pie {
+        font-size: 0.8em;
+        height: 15%;
+    }
+    table {
+        height: 70%;
+    }
+    input {
+        width: 90%;
+        height: 80%;
+    }
+    #ModalFormularioAlta,
+    #ModalFormularioModi {
+        width: 80%;
+    }
+    [campo-dato='fecha'] {
+        display: none;
+    }
+    [campo-dato='clase'] {
+        display: none;
+    }
+    [campo-dato='cantidad'] {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    button {
+        font-size: 0.7em;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    input {
+        width: 90%;
+        height: 80%;
+    }
+    div.titulo {
+        font-size: 0.8em;
+        height: 15%;
+    }
+    div.pie {
+        font-size: 0.8em;
+        height: 15%;
+    }
+    table {
+        height: 70%;
+    }
+    #ModalFormularioAlta,
+    #ModalFormularioModi {
+        width: 70%;
+    }
+    [campo-dato='fecha'] {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    button {
+        font-size: 20px;
+        padding: 2px;
+        box-sizing: border-box;
+    }
+    input {
+        width: 90%;
+        height: 80%;
+    }
+}

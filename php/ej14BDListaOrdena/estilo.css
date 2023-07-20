@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: pink;
+}
+
+body {
+    height: 82%;
+    font-family: sans-serif;
+    background-color: pink;
+}
+
+#cont {
+    width: 100%;
+    height: 100%;
+}
+
+div.encabezado {
+    padding: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: blueviolet;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 13%;
+    text-align: center;
+    align-items: center;
+}
+
+div.pie {
+    padding: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: blueviolet;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+    height: 12%;
+    margin: 0;
+}
+
+div.columnaIni {
+    padding-top: 1%;
+    box-sizing: border-box;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    float: left;
+    background-color: lightblue;
+    border-left: solid;
+    border-width: thin;
+    color: blueviolet;
+    font-weight: bold;
+    height: 5%;
+    width: 16.64%;
+    cursor: pointer;
+}
+
+div.columna {
+    padding-top: 1%;
+    box-sizing: border-box;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    float: left;
+    background-color: lightblue;
+    border-left: solid;
+    border-width: thin;
+    color: blueviolet;
+    font-weight: bold;
+    height: 80%;
+    width: 16.64%;
+    display: block;
+    margin: 0;
+}
+
+div.th {
+    background-color: lightblue;
+    width: 100%;
+    height: 10%;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.contenedor {
+    height: 96%;
+    display: block;
+}
+
+tr.fila1 {
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border-left: solid;
+    font-size: 1em;
+}
+
+#hola:hover {
+    cursor: pointer;
+}
+
+div.titulo {
+    position: block;
+}
+
+div.ordena {
+    position: block;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+button {
+    position: block;
+    border-radius: 15px;
+    background-color: pink;
+    box-shadow: 0px 2px 0px black;
+    border-width: thin;
+    color: black;
+    margin: 1%;
+    height: 90%;
+    width: 10%;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: lemonchiffon;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    display: block;
+}
+
+tbody {
+    table-layout: fixed;
+    height: 86%;
+    display: block;
+    overflow-y: auto;
+}
+
+tbody td {
+    padding-left: 1.5%;
+    text-align: center;
+}
+
+[campo-dato="Id"],
+[campo-dato="Empresa"],
+[campo-dato="Clase"],
+[campo-dato="Descripcion"],
+[campo-dato="Fecha"],
+[campo-dato="Cantidad"] {
+    width: 16.77%;
+}
+
+tr {
+    height: 20%;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: plum;
+    color: black;
+}
+
+td {
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 25%;
+}
+
+.contenedorBloq {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.contenedorAct {
+    pointer-events: auto;
+    opacity: 1;
+}

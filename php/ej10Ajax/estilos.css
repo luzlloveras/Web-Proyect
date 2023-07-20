@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    height: 50%;
+    width: 50%;
+    margin-left: 3px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#contenedor {
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+#dato {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    float: left;
+    background-color: pink;
+    align-content: center;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#encriptar {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    float: left;
+    background-color: blueviolet;
+    align-content: center;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.flecha {
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+}
+
+.menu_links {
+    height: 100%;
+    transition: transform .5;
+    display: flex;
+}
+
+#resultado {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    float: left;
+    background-color: yellow;
+    align-content: center;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#estiloRecibiendo {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    float: left;
+    background-color: greenyellow;
+    align-content: center;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#estado {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    float: left;
+    background-color: orange;
+    align-content: center;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1%;
+}
