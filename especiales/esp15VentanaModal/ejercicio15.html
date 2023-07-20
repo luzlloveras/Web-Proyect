@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 15 - ESPECIALES</title>
+        <link rel="stylesheet" type="text/css" href="./estilos.css">
+    </head>
+	<body>
+		<div id="contenedor">
+			<h1>Este es el div contenedor</h1>
+			<button id="abrir">Abrir div modal</button>
+		</div>
+		<div id="modal">
+			<div class="encabezadoModal">
+				Encabezado modal
+				<button class="cerrar" id="cerrar">X</button>
+			</div>
+			<iframe src="../esp05FormVariableArregloDeObjetos/ejercicio05.html"></iframe>
+		</div>
+	</body>
+	<script src="../jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			document.getElementById("modal").className="modalApagado";
+			document.getElementById("contenedor").className="contenedorAct";
+		});
+		document.getElementById("abrir").onclick=function(){
+			document.getElementById("modal").className="modalPrendido";
+			document.getElementById("contenedor").className="contenedorBloq";
+		}
+		document.getElementById("cerrar").onclick=function(){
+			document.getElementById("modal").className="modalApagado";
+			document.getElementById("contenedor").className="contenedorAct";
+		}
+	</script>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 20 - ESPECIALES</title>
+        <link rel="stylesheet" type="text/css" href="./estilos.css">
+    </head>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ejercicio 20 - ESPECIALES</title>
+            <link rel="stylesheet" type="text/css" href="./estilos.css">
+        </head>
+        <body>
+            <div id="cont">
+                <div class="encabezado-pie">
+                    <h2>Artistas musicales</h2>
+                    <button id="cargar">Cargar datos</button>
+                    <button id="vaciar">Vaciar datos</button>
+                    <button id="abrir">Abrir formulario</button>
+                </div>
+                <div class="th">
+                    <div class="columna">Nombre</div>
+                    <div class="columna">Posicion</div>
+                    <div class="columna">Fecha de nacimiento</div>
+                    <div class="columna">Shows</div>	
+                </div>
+                <div class="clear"></div>
+                <div class="contenedor">
+                    <table>
+                        <tbody id=tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="encabezado-pie">
+                    <h3>Pie de pagina</h3>
+                </div>
+            </div>
+            <div id="modal">
+                <div class="encabezadoModal">
+                    Encabezado modal
+                    <button class="cerrar" id="cerrar">X</button>
+                </div>
+                <iframe src="../esp05FormVariableArregloDeObjetos/ejercicio05.html"></iframe>
+            </div>
+        </body>
+        <script src="../jquery.js" type="text/javascript"></script>
+        <script src="../artistas.json" type="text/javascript"></script>
+        <script type="text/javascript">
+            var consagrados= JSON.parse(textoArtistas);
+            var fila;
+            var celda;
+            var cont=document.getElementById("contenedor");
+            var body=document.getElementById("tbody");
+            var flagCargado=0;
+            $(document).ready(function(){
+                document.getElementById("modal").className="modalApagado";
+                document.getElementById("cont").className="contenedorAct";
+            });
+            document.getElementById("abrir").onclick=function(){
+                document.getElementById("modal").className="modalPrendido";
+                document.getElementById("cont").className="contenedorBloq";
+            }
+            document.getElementById("cerrar").onclick=function(){
+                document.getElementById("modal").className="modalApagado";
+                document.getElementById("cont").className="contenedorAct";
+            }
+            document.getElementById("cargar").onclick = function() {
+                if(flagCargado == 0) {
+                    consagrados.artistas.forEach(element => {
+                    
+                        fila = document.createElement("tr");
+    
+                        celda = document.createElement("td");
+                        celda.setAttribute("campo-dato", "nombre")
+                        celda.innerHTML = element.nombre;
+                        // Agrega celda a nueva fila
+                        fila.appendChild(celda)
+                        
+                        celda = document.createElement("td");
+                        celda.setAttribute("campo-dato", "posicion")
+                        celda.innerHTML = element.posicion;
+                        // Agrega celda a nueva fila
+                        fila.appendChild(celda)
+                        
+                        celda = document.createElement("td");
+                        celda.setAttribute("campo-dato", "fecha")
+                        celda.innerHTML = element.fecha;
+                        // Agrega celda a nueva fila
+                        fila.appendChild(celda)
+                        
+                        celda = document.createElement("td");
+                        celda.setAttribute("campo-dato", "shows")
+                        celda.innerHTML = element.shows;
+                        // Agrega celda a nueva fila
+                        fila.appendChild(celda)
+                        
+                        body.appendChild(fila);
+                    });
+                    flagCargado++;
+                }
+            }
+            document.getElementById("vaciar").onclick=function(){
+                $("#tbody").empty();
+                flagCargado=0;
+            }
+        </script>
+    
+    </html>
+
+</html>

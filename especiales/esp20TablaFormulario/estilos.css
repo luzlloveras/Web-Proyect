@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	font-family: sans-serif;
+}
+#cont{
+	width: 100%;
+	height: 100%;
+}
+#modal{
+	position: fixed;
+	left: 25%;
+	top: 25%;
+	border: solid;
+	border-color: blue;
+	box-sizing: border-box;
+	width: 50%;
+	height: 50%;
+}div.encabezadoModal{
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 10%;
+	width: 100%;
+	background-color: blue;
+	color: #ABEBC6;
+}
+button.cerrar{
+	font-weight: bold;
+	color: lightgreen;
+	margin: 0;
+	position: relative;
+	left: 75%;
+	border: none;
+	box-shadow: none;
+	background-color: blue;
+	width: 5%;
+	height: 100%;
+}
+button.cerrar:hover{
+	background-color: blue;
+	font-weight: bold;
+	color: red;
+}
+iframe{
+	border: solid;
+	border-width: thin;
+	border-color: #424949;
+	width: 100%;
+	height: 90%;
+}
+div.encabezado-pie{
+	padding: 1%;
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: pink;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	width: 100%;
+	height: 15%;
+}
+div.th{
+	background-color: pink;
+	width: 100%;
+	height: 10%;
+}
+div.columna{
+	font-size: 1.2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	background-color: blueviolet;
+	border-left: solid;
+	border-color: blue;
+	border-width: thin;
+	color: white;
+	font-weight: bold;
+	height: 100%;
+	width: 24.70%;
+}
+div.clear{
+	clear: both;
+}
+div.contenedor{
+	height: 60%;
+	width: 100%;
+	overflow-y: auto;
+}
+h2{
+	position: relative;
+	left: 17.5%;
+}
+button{
+	position: relative;
+	left: 27%;
+	border-radius: 15px;
+	background-color: lightgreen;
+	box-shadow: 0px 2px 0px black;
+	border-width: thin;
+	color: black;
+	margin: 1%;
+	height: 90%;
+	width: 10%;
+}
+button:hover{
+	background-color: lemonchiffon;
+}
+button:active{
+	transform: scale(0.98);
+}
+table{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+tbody{
+	width: 100%;
+	height: 100%;
+	display: table;
+	overflow-y: auto;
+}
+tr{
+	height: 20%;
+}
+tbody tr:nth-child(odd){
+	background-color: palegoldenrod;
+	color: black;
+}
+tbody tr:nth-child(even){
+	background-color: lightsalmon;
+	color: black;
+}
+td{
+	box-sizing: border-box;
+	padding: 1%;	 
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	width: 25%;
+}
+.modalApagado{
+	visibility: hidden;
+}
+.modalPrendido{
+	visibility: visible;
+}
+.contenedorBloq{
+	pointer-events: none;
+	opacity: 0.3;
+}
+.contenedorAct{
+	pointer-events: auto;
+	opacity: 1;
+}
