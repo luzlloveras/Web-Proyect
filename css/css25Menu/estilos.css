@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a:hover {
+    background-color: blueviolet;
+    color: yellow;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    background-color: blue;
+    float: left;
+    position: relative;
+}
+
+#menu ul a {
+    display: inline-block;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+#menu ul ul li {
+    float: none;
+    width: auto;
+}
+
+#menu ul ul a {
+    padding: 10px;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}

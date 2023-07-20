@@ -1,0 +1,61 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+}
+
+div#divExterno {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+}
+
+div.divClase1 {
+    background-color: green;
+    margin-left: 0%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 36px;
+    width: 80%;
+}
+
+div.divClase2 {
+    background-color: yellow;
+    padding: 6px;
+    box-sizing: border-box;
+    width: 40%;
+    margin-left: 20%;
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+div.divClase3 {
+    background-color: orange;
+    padding: 6px;
+    box-sizing: border-box;
+    width: 40%;
+    height: 100px;
+    overflow: auto;
+    margin-left: 35%;
+    margin-top: 30px;
+}
+
+div.divClaseModal {
+    position: fixed;
+    width: 50%;
+    height: 20%;
+    top: 20%;
+    left: 15%;
+    opacity: 0.5;
+    overflow-y: auto;
+    visibility: visible;
+    z-index: 10;
+    background-color: blue;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}

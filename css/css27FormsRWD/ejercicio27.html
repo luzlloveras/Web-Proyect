@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 27 - CSS</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+    <main>
+        <form action="./respuestaFormulario.html" target="_blank" method="get">
+            <div class="FormInput">
+                <div class="Form">
+                    <label style="font-weight: bold;" for="apellido">1 Apellido:</label> <br/><input type="text" id="apellido" name="apellido" value="" autofocus/>
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="nombre">2 Nombre:</label> <br/><input type="text" id="nombre" name="nombre" value="" />
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="contrasena">3 Contraseña:</label> <br/><input type="password" id="contrasena" name="password" value="" />
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="campoDeshabilitado">4 Campo deshabilitado:</label> <br/><input type="text" id="campoDeshabilitado" name="campoDeshabilitado" value="Valor deshabilitado" disabled/>
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="fechahora">5 Fecha y hora:</label> <br/>
+                    <input type="datetime-local" id="fechahora" name="fechahora" value="" />
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="DNI">6 DNI:</label> <br/><input type="number" id="DNI" name="DNI" value="" />
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;">7 Actividades extracurriculares:</label> <br/>
+                    <input type="checkbox" id="musica" name="actExtra" value="musica" />
+                    <label style="font-weight: bold;" for="musica">Musica</label><br/>
+                    <input type="checkbox" id="pinturaArtistica" name="actExtra" value="pinturaArtistica" />
+                    <label style="font-weight: bold;" for="pinturaArtistica">Pintura Artistica</label><br/>
+                    <input type="checkbox" id="deportes" name="actExtra" value="deportes" />
+                    <label style="font-weight: bold;" for="deportes">Deportes</label><br/>
+                    <input type="checkbox" id="teatro" name="actExtra" value="teatro" />
+                    <label style="font-weight: bold;" for="teatro">Teatro</label><br/>
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="sexo">8 Sexo:</label> <br/>
+                    <input type="radio" id="sexo" name="sexo" value="M" checked/>
+                    <label style="font-weight: bold;" for="sexo">Masculino</label></br>
+                    <input type="radio" id="sexo" name="sexo" value="F" />
+                    <label style="font-weight: bold;" for="Sexo">Femenino</label>
+                </div>
+                <div class="Form">
+                    <span>9 VACIO</span>
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="Estudios">10 Estudios cursados:</label> <br/>
+                    <select id="Estudios" name="Estudios">
+                        <option value="pri" selected>Primarios</option>
+                        <option value="sec">Secundarios</option>
+                        <option value="ter">Terciarios</option>
+                        <option value="uni">Universitarios</option>
+                        <option value="pos">Postgrado</option>
+                    </select>
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="areaDeDesempeño">11 Area de desempeño:</label> <br/>
+                    <select id="areaDeDesempeño" name="areaDeDesempeño">
+                        <option value="admn" selected>Administración</option>
+                        <option value="ven">Venta</option>
+                        <option value="rec">Recursos Humanos</option>
+                        <option value="ger">Gerencia</option>
+                        <option value="pos">Post-Venta</option>
+                    </select>
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="turno">12 Turno:</label> <br/>
+                    <select id="turno" name="turno">
+                        <option value="M" selected>Mañana</option>
+                        <option value="T">Tarde</option>
+                        <option value="N">Noche</option>
+                    </select>
+                </div>
+                <div class="Form">
+                    <label style="font-weight: bold;" for="conduce">13 Conduce:</label> <br/>
+                    <input type="radio" id="conduce" name="conduce" value="Y" checked/>
+                    <label style="font-weight: bold;" for="conduce">Si</label></br>
+                    <input type="radio" id="conduce" name="conduce" value="N" />
+                    <label style="font-weight: bold;" for="conduce">No</label>
+                </div>
+            </div>
+            <div class="FormFooter">
+                <input type="submit" value="Enviar formulario sin validación">
+                <input type="reset" value="Borrar los campos">
+            </div>
+
+        </form>
+    </main>
+</body>
+<footer>
+    <p>Alumna: Maria Luz Lloveras // Legajo: 26607 // E-mail: mlloveras607@alumnos.frh.utn.edu.ar</p>
+</footer>
+
+</html>

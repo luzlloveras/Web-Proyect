@@ -1,0 +1,54 @@
+html {
+    margin: 0px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+@media only screen and (min-width: 500px)and (max-width: 1920px) {
+    div.contenedor {
+        background-color: lightskyblue;
+        width: 70%;
+        height: 100%;
+        margin: auto;
+    }
+    div.contenedor1 {
+        position: absolute;
+        background-color: pink;
+        font-size: 1em;
+        top: 30%;
+        left: 15.5%;
+        width: 14%;
+        height: 40%;
+        z-index: 1;
+        overflow: auto;
+    }
+    div.contenedor2 {
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        width: 35%;
+        height: 30%;
+        z-index: 1;
+        overflow: auto;
+    }
+    div.contenedor3 {
+        background-color: blueviolet;
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        width: 20%;
+        height: 40%;
+        opacity: 0.6;
+        z-index: 2;
+        overflow: auto;
+    }
+    img {
+        float: left;
+        width: 30%;
+        margin: 2px;
+    }
+}

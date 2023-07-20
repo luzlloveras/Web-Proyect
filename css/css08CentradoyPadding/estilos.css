@@ -1,0 +1,27 @@
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+div {
+    margin: auto;
+    width: 50%;
+}
+
+div#textoEnInterior {
+    background-color: lightblue;
+}
+
+div#PaddingSinBox {
+    background-color: lightgreen;
+    padding-inline: 5%;
+}
+
+div#PaddingConBox {
+    background-color: lightgoldenrodyellow;
+    padding-inline: 5%;
+    box-sizing: border-box;
+}

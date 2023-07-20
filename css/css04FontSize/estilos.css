@@ -1,0 +1,35 @@
+body {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+@media(max-width: 800px) {
+    body {
+        font-size: 3em;
+    }
+    p {
+        background-color: peru;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 1080px) {
+    body {
+        font-size: 2em;
+    }
+    p {
+        background-color: pink;
+    }
+}
+
+@media(min-width: 1080px) {
+    body {
+        font-size: 1em;
+    }
+    p {
+        background-color: gray;
+    }
+}
