@@ -1,0 +1,20 @@
+html,body{
+	height: 100%;
+}
+button{
+	margin: 1%;
+	width: 10%;
+	height: 5%;
+	background: pink;
+	font-family: sans-serif;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 0px 2px 0 grey;
+}
+button:hover{
+	background-color: violet;
+	color: white;
+}
+button:active{
+	transform: scale(0.98);
+}

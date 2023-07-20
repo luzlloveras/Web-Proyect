@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+}
+
+.controles {
+    z-index: 5;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#container {
+    width: 60%;
+    height: 50vh;
+    margin: auto;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: pink;
+    display: block;
+}
+
+.new_elements {
+    width: 50%;
+    height: 60px;
+    padding-left: 20px;
+    margin-bottom: -2px;
+    font-size: large;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: lightgreen;
+    text-align: left;
+    background-color: blueviolet;
+    border: solid 2px blue;
+}

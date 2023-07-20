@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html style="background-color: lightgoldenrodyellow">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - JS</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label>Nombre:</label><br />
+        <input type="text" id="nombre"><br /><br />
+        <label>Apellido:</label><br />
+        <input type="text" id="apellido"><br /><br />
+        <label>Fecha de nacimiento:</label><br />
+        <input type="text" id="fecha"><br /><br />
+        <button class="contenedor" id="crear">Crear persona</button>
+    </div>
+    <div class="botonera">
+        <button class="botonera" id="ver">Ver lista</button>
+        <button class="botonera" id="ocultar">Ocultar lista</button>
+    </div>
+    <div id="presentacion"></div>
+</body>
+<script type="text/javascript">
+    var presentacion = document.getElementById("presentacion");
+    presentacion.style.display = "none";
+    var persona_1 = {nombre: "Lucia", apellido:"Perez", fecha_nacimiento:"25/08/1995"};
+    var persona_2 = {nombre: "Pablo", apellido:"Rodriguez", fecha_nacimiento:"12/05/2001"};
+    var vectorPersonas = [persona_1, persona_2];
+    var nombre2;
+    var apellido2;
+    var fecha_nac;
+
+    function mostrarLista()
+    {
+        var texto = "<h3>Presentacion</h3>\n\
+                        <table style='border-collapse:collapse;border:solid'>\n\
+                            <tbody>\n";
+        vectorPersonas.forEach(persona => 
+        {    
+            texto = texto + "   <tr>\n\
+                                    <td style='border:solid'>" + persona.nombre + "</td>\n\
+                                    <td>" + persona.apellido + "</td>\n\
+                                    <td>" + persona.fecha_nacimiento + "</td>\n\
+                                </tr>\n";
+        });
+        texto = texto + "       </tbody>\n\
+                        </table>\n\
+                    <p>Longitud del vector: " + vectorPersonas.length + "</p>";
+        presentacion.innerHTML = texto;
+        presentacion.style.display = "block";
+    }
+
+    document.getElementById("crear").onclick = function()
+    {
+        nombre2 = document.getElementById("nombre").value;
+        apellido2 = document.getElementById("apellido").value;
+        fecha_nac = document.getElementById("fecha").value;
+        if(nombre2 =="" || apellido2 == "" || fecha_nac == "")
+        {    
+            alert("Debe ingresar todos los datos");
+        }
+        else
+        {
+            vectorPersonas.push( {nombre: nombre2, apellido: apellido2, fecha_nacimiento: fecha_nac} );
+            document.getElementById("nombre").value = "";
+            document.getElementById("apellido").value = "";
+            document.getElementById("fecha").value = "";
+            mostrarLista();
+        }
+    };
+
+    document.getElementById("ver").onclick = function()
+    {
+        mostrarLista();
+    }
+
+    document.getElementById("ocultar").onclick = function() 
+    {
+        presentacion.style.display = "none";
+    }
+</script>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+</body>
+<footer>
+    <h1>Datos del alumno</h1>
+    <p>Maria Luz Lloveras</p>
+    <p>Legajo: 26607</p>
+    <p>mlloveras607@alumnos.frh.utn.edu.ar</p>
+</footer>
+
+</html>

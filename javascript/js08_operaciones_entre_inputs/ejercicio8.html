@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="background-color: lightgoldenrodyellow">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - JS</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+</head>
+
+<body>
+    <div id="div_exterior">
+        <div id="div_titulo">
+            <h4>Introducir un valor en los cuadros de texto y luego pulsar el boton para ejecutar la funcion correspondiente.</h4>
+        </div>
+        <div id="div_botones">
+            <label for="entrada_1">Entrada 1: </label><input type="text" id="entrada_1" value="0" autofocus>
+            <label for="entrada_2">Entrada 2: </label><input type="text" id="entrada_2" value="0">
+            <label for="entrada_3">Entrada 3: </label><input type="text" id="entrada_3" value="0">
+            <label for="resultado">Resultado: </label><input type="text" id="resultado">
+        </div>
+        <div id="div_operadores">
+            <button class="boton_operador" id="boton_suma">Suma</button>
+            <button class="boton_operador" id="boton_promedio">Promedia</button>
+            <button class="boton_operador" id="boton_mayor">Mayor</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function mayor(argumento1, argumento2) {
+            if (argumento1 >= argumento2) {
+                return argumento1;
+            }
+            return argumento2;
+        }
+
+        document.getElementById("boton_suma").onclick = function() {
+            document.getElementById("resultado").value = parseInt(document.getElementById("entrada_1").value) + parseInt(document.getElementById("entrada_2").value) + parseInt(document.getElementById("entrada_3").value)
+        }
+
+        document.getElementById("boton_promedio").onclick = function() {
+            document.getElementById("resultado").value = (parseInt(document.getElementById("entrada_1").value) + parseInt(document.getElementById("entrada_2").value) + parseInt(document.getElementById("entrada_3").value)) / 3
+        }
+
+        document.getElementById("boton_mayor").onclick = function() {
+            document.getElementById("resultado").value = mayor(mayor(parseInt(document.getElementById("entrada_1").value), parseInt(document.getElementById("entrada_2").value)), parseInt(document.getElementById("entrada_3").value));
+        }
+    </script>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+</body>
+<footer>
+    <h1>Datos del alumno</h1>
+    <p>Maria Luz Lloveras</p>
+    <p>Legajo: 26607</p>
+    <p>mlloveras607@alumnos.frh.utn.edu.ar</p>
+</footer>
+
+</html>

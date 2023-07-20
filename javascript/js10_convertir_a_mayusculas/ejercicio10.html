@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html style="background-color: lightgoldenrodyellow">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - JS</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+</head>
+
+<body>
+    <div id="div_exterior">
+        <label for="ingrese_nombre">Ingrese Nombre:</label><input type="text" id="ingrese_nombre" autofocus></br>
+        <label for="ingrese_apellido">Ingrese Apellido:</label><input type="text" id="ingrese_apellido">
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("ingrese_nombre").onchange = function() {
+            this.value = this.value.toUpperCase();
+        }
+        document.getElementById("ingrese_apellido").onchange = function() {
+            this.value = this.value.toUpperCase();
+        }
+    </script>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+</body>
+<footer>
+    <h1>Datos del alumno</h1>
+    <p>Maria Luz Lloveras</p>
+    <p>Legajo: 26607</p>
+    <p>mlloveras607@alumnos.frh.utn.edu.ar</p>
+</footer>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="background-color: lightgoldenrodyellow">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - JS</title>
+</head>
+
+<body>
+    <button id="incorrecta" title="Inicializa variable global desde adentro de una funcion con la declacion var">
+        Inicializacion incorrecta
+    </button>
+
+    <button id="correcta" title="Inicializa variable global desde adentro de una funcion sin declacion var">
+        Inicializacion correcta
+    </button>
+
+    <button id="mostrarVariable" title="Muestra la variable global y su tipo">
+        Muestra variable global
+    </button>
+
+    <script type="text/javascript">
+        var variable_global;
+
+        document.getElementById("incorrecta").onclick = function() {
+            var variable_global = prompt("Ingrese valor para la variable global")
+            alert('El valor de la variable global es: ' + variable_global);
+            alert('El tipo de la variable global es: ' + typeof variable_global);
+        }
+        document.getElementById("correcta").onclick = function() {
+            variable_global = prompt("Ingrese valor para la variable global")
+            alert('El valor de la variable global es: ' + variable_global);
+            alert('El tipo de la variable global es: ' + typeof variable_global);
+        }
+        document.getElementById("mostrarVariable").onclick = function() {
+
+            if (variable_global == undefined) {
+                alert("La variable global no ha sido inicializada")
+            } else {
+                alert('El valor de la variable global es: ' + variable_global);
+                alert('El tipo de la variable global es: ' + typeof variable_global);
+            }
+
+        }
+    </script>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+</body>
+<footer>
+    <h1>Datos del alumno</h1>
+    <p>Maria Luz Lloveras</p>
+    <p>Legajo: 26607</p>
+    <p>mlloveras607@alumnos.frh.utn.edu.ar</p>
+</footer>
+
+</html>

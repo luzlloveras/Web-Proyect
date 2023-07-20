@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	font-family: sans-serif;
+}
+div.contenedor{
+	padding: 1%;
+	margin: auto;
+	display: block;
+	text-align: center;
+	width: 40%;
+	height: 40%;
+	background-color: pink;
+}
+div.botonera{
+	width: 40%;
+	height: 15%;
+	padding: 1%;
+	margin: auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: blueviolet;
+}
+#presentacion{
+	margin: auto;
+	width: 40%;
+	height: auto;
+	margin-top: 1%;
+	padding: 1%;
+}
+input{
+	margin-top: 1%;
+	width: 60%;
+	height: 10%;
+}
+input:focus{
+	background-color: lightblue;
+}
+label{
+	color: black;
+	font-weight: bold;
+}
+button.contenedor{
+	margin-top: 1%;
+	width: 45%;
+	height: 11%;
+	background-color: black;
+	color: blueviolet;
+	font-weight: bold;
+	border: solid;
+	border-width: thin;
+	border-color: blueviolet;
+}
+button.botonera{
+	width: 35%;
+	height: 30%;
+	background-color: black;
+	color: blueviolet;
+	font-weight: bold;
+	border: solid;
+	border-width: thin;
+	border-color: blueviolet;
+}
+button:hover{
+	background-color: lightgreen;
+	border-color: black;
+	color: black;
+}
+button:active{
+	transform: scale(0.98);
+}
+p{
+	margin-top: 2%;
+}
+table{
+	margin-top: 2%;
+	width: 100%;
+	border-collapse: collapse;
+	border: solid;
+}
+tr{
+	text-align: center;
+	height: 10%;
+}
+td{
+	border: solid;
+	border-collapse: collapse;
+	width: 30%;
+}

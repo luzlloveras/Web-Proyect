@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html style="background-color: lightgoldenrodyellow">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - JS</title>
+</head>
+
+<body>
+    <h1>Introducir un valor en el cuadro de texto y luego pulsar el boton para ejecutar el procedimiento correspondiente.</h1>
+    <input type="text" id="input_texto">
+    <button id="mostrar_valor">Muestra Valor</button>
+    <button id="sumar">Suma 1</button>
+    <button id="al_cuadrado">x**2</button>
+    <button id="multiplicar">multiplicar * 2</button>
+    <button id="dos_elevado_a">2**x</button>
+
+
+    <script type="text/javascript">
+        document.getElementById("mostrar_valor").onclick = function() {
+            alert(document.getElementById("input_texto").value);
+        }
+        document.getElementById("sumar").onclick = function() {
+            var input_textoInt = parseInt(document.getElementById("input_texto").value);
+            document.getElementById("input_texto").value = input_textoInt + 1;
+        }
+        document.getElementById("al_cuadrado").onclick = function() {
+            var input_textoInt = parseInt(document.getElementById("input_texto").value);
+            document.getElementById("input_texto").value = input_textoInt * input_textoInt;
+        }
+        document.getElementById("multiplicar").onclick = function() {
+            var input_textoInt = parseInt(document.getElementById("input_texto").value);
+            document.getElementById("input_texto").value = input_textoInt * 2;
+        }
+        document.getElementById("dos_elevado_a").onclick = function() {
+            var input_textoInt = parseInt(document.getElementById("input_texto").value);
+            var resultado = 2;
+
+            for (i = 1; i < input_textoInt; i++) {
+                resultado = resultado * 2;
+            }
+            document.getElementById("input_texto").value = resultado;
+        }
+    </script>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+</body>
+<footer>
+    <h1>Datos del alumno</h1>
+    <p>Maria Luz Lloveras</p>
+    <p>Legajo: 26607</p>
+    <p>mlloveras607@alumnos.frh.utn.edu.ar</p>
+</footer>
+
+</html>

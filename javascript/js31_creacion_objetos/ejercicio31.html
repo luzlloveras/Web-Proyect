@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html style="background-color: lightgoldenrodyellow">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 31 - JS</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+</head>
+<body>
+    <div class="controles">
+        <button id="create">Crear</button>
+        <button id="reset">Limpiar</button>
+        <button id="info">Info</button>
+    </div>
+    <div class="container" id="container">
+
+    </div>
+</body>
+<script>
+    var contenedor = document.getElementById("container");
+    contenedor.removeChild(contenedor.childNodes[0]);
+
+    var boton_crear = document.getElementById("create");
+    var boton_limpiar = document.getElementById("reset");
+    var boton_info = document.getElementById("info");
+
+    var new_element             
+    var text_new_element;         
+
+    var listaNodosHijo = contenedor.childNodes;
+
+    boton_crear.onclick = function() {
+        var indice = listaNodosHijo.length;
+
+        new_element = document.createElement("div");
+        new_element.className = "new_elements";
+
+        text_new_element = document.createElement("p");
+        text_new_element.textContent = "Nuevo elemento: " + indice;
+
+        new_element.appendChild(text_new_element);
+
+        contenedor.appendChild(new_element);
+    }
+
+
+    boton_limpiar.onclick = function() 
+    {
+        while(listaNodosHijo.length > 0) 
+        {
+            contenedor.removeChild(listaNodosHijo[0]);
+        }
+    }
+
+    boton_info.onclick = function() 
+    {
+        alert("Longitud de Nodos: " + contenedor.childNodes.length);
+        let index = 0;
+        
+        listaNodosHijo.forEach(element => 
+        {
+            alert("Indice: " + index + " innerHTML: " + element.innerHTML);
+            index++;
+        });
+    }
+</script>
+</html>

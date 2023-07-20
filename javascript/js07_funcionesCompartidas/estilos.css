@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+div.contenedor {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: palevioletred;
+    width: 50%;
+    height: 50%;
+    top: 5%;
+    left: 25%;
+    padding: 1%;
+}
+
+div.numeros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+    width: 80%;
+    height: 55%;
+    padding: 1%;
+}
+
+div.operaciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    width: 80%;
+    height: 35%;
+}
+
+button.boton_numero {
+    background-color: blueviolet;
+    color: white;
+    width: 30%;
+    margin: 1%;
+}
+
+button.boton_operador {
+    background-color: pink;
+    color: black;
+    width: 35%;
+    height: 30%;
+    margin: 1%;
+}
+
+input {
+    text-align: right;
+    width: 80%;
+    height: 10%;
+}
+
+button.boton_numero:hover {
+    box-shadow: inset 0 0 10px lightskyblue;
+}
+
+button.boton_operador:hover {
+    box-shadow: inset 0 0 10px burlywood;
+}
+
+button:active {
+    transform: scale(0.98);
+}
